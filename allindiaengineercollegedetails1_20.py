@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/university/shobhit-university-gangoh-saharanpur-40052",
-  "https://www.shiksha.com/university/adikavi-nannaya-university-aknudoa-rajahmundry-50956",
-  "https://www.shiksha.com/college/jagadambha-college-of-engineering-and-technology-yavatmal-59481",
-  "https://www.shiksha.com/college/srinivasa-ramanujan-institute-of-technology-anantapur-59091",
-  "https://www.shiksha.com/college/university-college-of-engineering-arni-anna-university-tiruvannamalai-54655",
-  "https://www.shiksha.com/college/delhi-engineering-college-dec-faridabad-31993",
-  "https://www.shiksha.com/college/b-a-college-of-engineering-and-technology-jamshedpur-23703",
-  "https://www.shiksha.com/college/government-engineering-college-bhuj-kutch-district-52560",
-  "https://www.shiksha.com/college/institute-of-technology-university-of-kashmir-zakura-campus-srinagar-181019",
-  "https://www.shiksha.com/college/rl-institute-of-nautical-sciences-rlins-madurai-21581",
-  "https://www.shiksha.com/college/vemu-institute-of-technology-chittoor-43106",
-  "https://www.shiksha.com/college/patel-group-of-institutions-patel-college-of-science-technology-indore-60421",
-  "https://www.shiksha.com/college/y-s-r-engineering-college-yogi-vemana-university-andhra-pradesh-other-58625",
-  "https://www.shiksha.com/college/isl-engineering-college-hyderabad-60557",
-  "https://www.shiksha.com/college/k-c-e-society-s-college-of-engineering-and-information-technology-jalgaon-59791",
-  "https://www.shiksha.com/college/eastern-academy-of-science-and-technology-bhubaneswar-37956",
-  "https://www.shiksha.com/university/guru-nanak-university-gnu-hyderabad-233126",
-  "https://www.shiksha.com/college/p-v-k-k-institute-of-technology-anantapur-49351",
-  "https://www.shiksha.com/college/central-institute-of-plastics-engineering-and-technology-chennai-guindy-21587",
-  "https://www.shiksha.com/college/g-h-raisoni-college-of-engineering-and-management-amravati-53355",
+  "https://www.shiksha.com/university/nit-durgapur-national-institute-of-technology-54019",
+  "https://www.shiksha.com/university/birla-institute-of-technology-mesra-ranchi-24087",
+  "https://www.shiksha.com/university/upes-dehradun-30663",
+  "https://www.shiksha.com/university/saveetha-institute-of-medical-and-technical-sciences-poonamallee-chennai-34281",
+  "https://www.shiksha.com/university/nit-silchar-national-institute-of-technology-28583",
+  "https://www.shiksha.com/college/nit-patna-national-institute-of-technology-23147",
+  "https://www.shiksha.com/university/graphic-era-deemed-to-be-university-dehradun-22612",
+  "https://www.shiksha.com/university/sathyabama-institute-of-science-and-technology-chennai-23588",
+  "https://www.shiksha.com/college/sardar-vallabhbhai-national-institute-of-technology-surat-24414",
+  "https://www.shiksha.com/college/ramaiah-institute-of-technology-bangalore-474",
+  "https://www.shiksha.com/college/iit-palakkad-indian-institute-of-technology-53829",
+  "https://www.shiksha.com/university/international-institute-of-information-technology-bangalore-26396",
+  "https://www.shiksha.com/university/banasthali-vidyapith-jaipur-3155",
+  "https://www.shiksha.com/college/nit-srinagar-national-institute-of-technology-24264",
+  "https://www.shiksha.com/college/college-of-engineering-pune-28324",
+  "https://www.shiksha.com/college/iit-bhilai-indian-institute-of-technology-53794",
+  "https://www.shiksha.com/university/mit-wpu-pune-53229",
+  "https://www.shiksha.com/university/andhra-university-visakhapatnam-2948",
+  "https://www.shiksha.com/university/chitkara-university-chandigarh-25096",
+  "https://www.shiksha.com/college/jntuh-college-of-engineering-hyderabad-jawaharlal-nehru-technological-university-hyderabad-kukatpally-48793",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count =1021
+    c_count =21
 
     try:
         for base_url in BASE_URL:
