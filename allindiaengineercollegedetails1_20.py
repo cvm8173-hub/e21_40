@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
- "https://www.shiksha.com/university/punjabi-university-patiala-24117",
-  "https://www.shiksha.com/university/sarala-birla-university-ranchi-61731",
-  "https://www.shiksha.com/college/sree-chitra-thirunal-college-of-engineering-thiruvananthapuram-4476",
-  "https://www.shiksha.com/college/nss-college-of-engineering-palakkad-20801",
-  "https://www.shiksha.com/college/mahatma-gandhi-institute-of-technology-himayat-nagar-hyderabad-25756",
-  "https://www.shiksha.com/college/keshav-memorial-institute-of-technology-narayanguda-hyderabad-44845",
-  "https://www.shiksha.com/university/shri-vaishnav-vidyapeeth-vishwavidyalaya-indore-48873",
-  "https://www.shiksha.com/college/deogiri-institute-of-engineering-and-management-studies-aurangabad-49379",
-  "https://www.shiksha.com/college/iiit-raichur-indian-institute-of-information-technology-65337",
-  "https://www.shiksha.com/college/tulsiramji-gaikwad-patil-college-of-engineering-and-technology-nagpur-57539",
-  "https://www.shiksha.com/college/state-institute-of-engineering-and-technology-nilokheri-karnal-61485",
-  "https://www.shiksha.com/university/shri-guru-ram-rai-university-dehradun-101361",
-  "https://www.shiksha.com/college/padmabhushan-vasantdada-patil-pratishthan-college-of-engineering-chunnabhatti-mumbai-20831",
-  "https://www.shiksha.com/college/ramkrishna-mahato-government-engineering-college-purulia-51818",
-  "https://www.shiksha.com/college/jspm-tssm-s-bhivarabai-sawant-college-of-engineering-and-research-narhe-pune-52520",
-  "https://www.shiksha.com/college/accurate-group-of-institutions-greater-noida-64099",
-  "https://www.shiksha.com/college/national-fire-service-college-nagpur-20726",
-  "https://www.shiksha.com/college/swami-vivekananda-institute-of-science-and-technology-sonarpur-kolkata-40228",
-  "https://www.shiksha.com/college/sandip-institute-of-technology-and-research-centre-nashik-33253",
-  "https://www.shiksha.com/college/university-institute-of-engineering-and-technology-csjm-university-kanpur-51672",
+  "https://www.shiksha.com/college/shivpuri-institute-of-technology-madhya-pradesh-other-147191",
+  "https://www.shiksha.com/college/meri-college-of-engineering-and-technology-meri-cet-bahadurgarh-37432",
+  "https://www.shiksha.com/college/avn-institute-of-engineering-and-technology-avniet-ranga-reddy-44801",
+  "https://www.shiksha.com/college/sarabhai-institute-of-science-and-technology-trivandrum-47530",
+  "https://www.shiksha.com/college/jnafau-spa-school-of-planning-and-architecture-masab-tank-hyderabad-51567",
+  "https://www.shiksha.com/college/swami-vivekananda-institute-of-technology-secunderabad-52762",
+  "https://www.shiksha.com/college/rgc-rajiv-gandhi-group-of-institution-r-t-nagar-bangalore-25154",
+  "https://www.shiksha.com/college/college-of-engineering-attingal-thiruvananthapuram-63889",
+  "https://www.shiksha.com/university/bhagwan-mahavir-university-surat-182535",
+  "https://www.shiksha.com/college/park-college-of-engineering-and-technology-pcet-coimbatore-28427",
+  "https://www.shiksha.com/college/mangayarkarasi-college-of-engineering-madurai-61773",
+  "https://www.shiksha.com/college/sanskar-college-of-engineering-and-technology-sanskar-educational-group-ghaziabad-59167",
+  "https://www.shiksha.com/college/s-k-n-sinhgad-college-of-engineering-solapur-52052",
+  "https://www.shiksha.com/university/abhilashi-university-mandi-56079",
+  "https://www.shiksha.com/college/central-electrochemical-research-institute-karaikudi-62011",
+  "https://www.shiksha.com/college/global-institute-of-management-and-technology-nadia-51859",
+  "https://www.shiksha.com/university/nirwan-university-jaipur-149377",
+  "https://www.shiksha.com/college/college-of-engineering-ambajogai-maharashtra-other-20583",
+  "https://www.shiksha.com/college/dr-h-n-national-college-of-engineering-bangalore-231094",
+  "https://www.shiksha.com/college/delhi-college-of-technology-and-management-faridabad-47078",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count =441
+    c_count =941
 
     try:
         for base_url in BASE_URL:
