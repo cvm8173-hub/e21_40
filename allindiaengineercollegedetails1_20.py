@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/university/nit-durgapur-national-institute-of-technology-54019",
-  "https://www.shiksha.com/university/birla-institute-of-technology-mesra-ranchi-24087",
-  "https://www.shiksha.com/university/upes-dehradun-30663",
-  "https://www.shiksha.com/university/saveetha-institute-of-medical-and-technical-sciences-poonamallee-chennai-34281",
-  "https://www.shiksha.com/university/nit-silchar-national-institute-of-technology-28583",
-  "https://www.shiksha.com/college/nit-patna-national-institute-of-technology-23147",
-  "https://www.shiksha.com/university/graphic-era-deemed-to-be-university-dehradun-22612",
-  "https://www.shiksha.com/university/sathyabama-institute-of-science-and-technology-chennai-23588",
-  "https://www.shiksha.com/college/sardar-vallabhbhai-national-institute-of-technology-surat-24414",
-  "https://www.shiksha.com/college/ramaiah-institute-of-technology-bangalore-474",
-  "https://www.shiksha.com/college/iit-palakkad-indian-institute-of-technology-53829",
-  "https://www.shiksha.com/university/international-institute-of-information-technology-bangalore-26396",
-  "https://www.shiksha.com/university/banasthali-vidyapith-jaipur-3155",
-  "https://www.shiksha.com/college/nit-srinagar-national-institute-of-technology-24264",
-  "https://www.shiksha.com/college/college-of-engineering-pune-28324",
-  "https://www.shiksha.com/college/iit-bhilai-indian-institute-of-technology-53794",
-  "https://www.shiksha.com/university/mit-wpu-pune-53229",
-  "https://www.shiksha.com/university/andhra-university-visakhapatnam-2948",
-  "https://www.shiksha.com/university/chitkara-university-chandigarh-25096",
-  "https://www.shiksha.com/college/jntuh-college-of-engineering-hyderabad-jawaharlal-nehru-technological-university-hyderabad-kukatpally-48793",
+ "https://www.shiksha.com/university/punjabi-university-patiala-24117",
+  "https://www.shiksha.com/university/sarala-birla-university-ranchi-61731",
+  "https://www.shiksha.com/college/sree-chitra-thirunal-college-of-engineering-thiruvananthapuram-4476",
+  "https://www.shiksha.com/college/nss-college-of-engineering-palakkad-20801",
+  "https://www.shiksha.com/college/mahatma-gandhi-institute-of-technology-himayat-nagar-hyderabad-25756",
+  "https://www.shiksha.com/college/keshav-memorial-institute-of-technology-narayanguda-hyderabad-44845",
+  "https://www.shiksha.com/university/shri-vaishnav-vidyapeeth-vishwavidyalaya-indore-48873",
+  "https://www.shiksha.com/college/deogiri-institute-of-engineering-and-management-studies-aurangabad-49379",
+  "https://www.shiksha.com/college/iiit-raichur-indian-institute-of-information-technology-65337",
+  "https://www.shiksha.com/college/tulsiramji-gaikwad-patil-college-of-engineering-and-technology-nagpur-57539",
+  "https://www.shiksha.com/college/state-institute-of-engineering-and-technology-nilokheri-karnal-61485",
+  "https://www.shiksha.com/university/shri-guru-ram-rai-university-dehradun-101361",
+  "https://www.shiksha.com/college/padmabhushan-vasantdada-patil-pratishthan-college-of-engineering-chunnabhatti-mumbai-20831",
+  "https://www.shiksha.com/college/ramkrishna-mahato-government-engineering-college-purulia-51818",
+  "https://www.shiksha.com/college/jspm-tssm-s-bhivarabai-sawant-college-of-engineering-and-research-narhe-pune-52520",
+  "https://www.shiksha.com/college/accurate-group-of-institutions-greater-noida-64099",
+  "https://www.shiksha.com/college/national-fire-service-college-nagpur-20726",
+  "https://www.shiksha.com/college/swami-vivekananda-institute-of-science-and-technology-sonarpur-kolkata-40228",
+  "https://www.shiksha.com/college/sandip-institute-of-technology-and-research-centre-nashik-33253",
+  "https://www.shiksha.com/college/university-institute-of-engineering-and-technology-csjm-university-kanpur-51672",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count =21
+    c_count =441
 
     try:
         for base_url in BASE_URL:
