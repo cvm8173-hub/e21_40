@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/chhattisgarh-institute-of-technology-kabirdham-242514",
-  "https://www.shiksha.com/college/gandhi-institute-of-advanced-computer-and-research-orissa-other-22204",
-  "https://www.shiksha.com/college/dhruva-institute-of-engineering-and-technology-dilsukh-nagar-hyderabad-42776",
-  "https://www.shiksha.com/college/sbm-college-of-engineering-and-technology-tamil-nadu-other-54260",
-  "https://www.shiksha.com/college/guru-nanak-institutions-ambala-59831",
-  "https://www.shiksha.com/college/hi-tech-institute-of-engineering-technology-powered-by-sunstone-ghaziabad-239300",
-  "https://www.shiksha.com/college/s-s-n-engineering-college-ongole-115717",
-  "https://www.shiksha.com/college/skiltek-group-of-institutions-kochi-4437",
-  "https://www.shiksha.com/college/thiruvalluvar-college-of-engineering-and-technology-tamil-nadu-other-23059",
-  "https://www.shiksha.com/college/anwar-ul-uloom-college-of-engineering-and-technology-andhra-pradesh-other-46569",
-  "https://www.shiksha.com/college/sou-vasudhatai-deshmukh-college-of-food-technology-maharashtra-other-66957",
-  "https://www.shiksha.com/college/ballarpur-institute-of-technology-chandrapur-115269",
-  "https://www.shiksha.com/university/techno-global-university-madhya-pradesh-vidisha-42905",
-  "https://www.shiksha.com/college/siddartha-educational-academy-group-of-institutions-chittoor-146283",
-  "https://www.shiksha.com/college/sunstone-sushant-university-gurgaon-205075",
-  "https://www.shiksha.com/college/christian-college-of-engineering-and-technology-bhilai-20540",
-  "https://www.shiksha.com/college/the-techno-school-tts-bhubaneswar-23420",
-  "https://www.shiksha.com/college/rattan-institute-of-technology-and-management-ritm-haryana-haryana-other-27924",
-  "https://www.shiksha.com/university/st-joseph-university-dimapur-64847",
-  "https://www.shiksha.com/college/aryavart-institute-of-technology-and-management-lucknow-66501",
+  "https://www.shiksha.com/college/chaitanya-institute-of-technology-and-science-warangal-194211",
+  "https://www.shiksha.com/college/krupajal-engineering-college-khordha-195669",
+  "https://www.shiksha.com/university/shubham-university-bhopal-213359",
+  "https://www.shiksha.com/college/maharishi-arvind-college-of-engineering-and-research-center-jaipur-46866",
+  "https://www.shiksha.com/college/sir-vishveshwaraiah-institute-of-science-and-technology-chittoor-60993",
+  "https://www.shiksha.com/college/skr-college-of-engineering-and-technology-nellore-61019",
+  "https://www.shiksha.com/college/guru-nanak-institute-of-engineering-and-management-hoshiarpur-59203",
+  "https://www.shiksha.com/college/st-mary-s-college-of-engineering-technology-medak-61311",
+  "https://www.shiksha.com/college/t-s-m-jain-college-of-technology-villupuram-61647",
+  "https://www.shiksha.com/college/swarnandhra-institute-of-engineering-and-technology-narasaraopet-63535",
+  "https://www.shiksha.com/college/patiala-institute-of-engineering-and-technology-for-women-66387",
+  "https://www.shiksha.com/college/amruta-institute-of-engineering-and-management-sciences-karnataka-other-67253",
+  "https://www.shiksha.com/college/aditya-college-of-agriculture-bio-technology-beed-maharashtra-other-153889",
+  "https://www.shiksha.com/college/college-of-dairy-technology-raipur-187847",
+  "https://www.shiksha.com/college/dr-a-p-j-abdul-kalam-uit-jhabua-210157",
+  "https://www.shiksha.com/college/coastal-institute-of-technology-and-management-vizianagaram-20310",
+  "https://www.shiksha.com/college/applied-college-of-management-and-engineering-haryana-other-24852",
+  "https://www.shiksha.com/college/trident-et-group-of-institutions-ghaziabad-32027",
+  "https://www.shiksha.com/college/krishna-chaitanya-institute-of-technology-and-sciences-andhra-pradesh-other-60580",
+  "https://www.shiksha.com/college/samanta-chandrasekhar-institute-of-technology-and-management-koraput-148035",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 1741
+    c_count = 2161
 
     try:
         for base_url in BASE_URL:
