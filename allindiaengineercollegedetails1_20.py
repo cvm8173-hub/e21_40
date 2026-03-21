@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/chaitanya-institute-of-technology-and-science-warangal-194211",
-  "https://www.shiksha.com/college/krupajal-engineering-college-khordha-195669",
-  "https://www.shiksha.com/university/shubham-university-bhopal-213359",
-  "https://www.shiksha.com/college/maharishi-arvind-college-of-engineering-and-research-center-jaipur-46866",
-  "https://www.shiksha.com/college/sir-vishveshwaraiah-institute-of-science-and-technology-chittoor-60993",
-  "https://www.shiksha.com/college/skr-college-of-engineering-and-technology-nellore-61019",
-  "https://www.shiksha.com/college/guru-nanak-institute-of-engineering-and-management-hoshiarpur-59203",
-  "https://www.shiksha.com/college/st-mary-s-college-of-engineering-technology-medak-61311",
-  "https://www.shiksha.com/college/t-s-m-jain-college-of-technology-villupuram-61647",
-  "https://www.shiksha.com/college/swarnandhra-institute-of-engineering-and-technology-narasaraopet-63535",
-  "https://www.shiksha.com/college/patiala-institute-of-engineering-and-technology-for-women-66387",
-  "https://www.shiksha.com/college/amruta-institute-of-engineering-and-management-sciences-karnataka-other-67253",
-  "https://www.shiksha.com/college/aditya-college-of-agriculture-bio-technology-beed-maharashtra-other-153889",
-  "https://www.shiksha.com/college/college-of-dairy-technology-raipur-187847",
-  "https://www.shiksha.com/college/dr-a-p-j-abdul-kalam-uit-jhabua-210157",
-  "https://www.shiksha.com/college/coastal-institute-of-technology-and-management-vizianagaram-20310",
-  "https://www.shiksha.com/college/applied-college-of-management-and-engineering-haryana-other-24852",
-  "https://www.shiksha.com/college/trident-et-group-of-institutions-ghaziabad-32027",
-  "https://www.shiksha.com/college/krishna-chaitanya-institute-of-technology-and-sciences-andhra-pradesh-other-60580",
-  "https://www.shiksha.com/college/samanta-chandrasekhar-institute-of-technology-and-management-koraput-148035",
+  "https://www.shiksha.com/college/ganga-pharmacy-college-nizamabad-87729",
+  "https://www.shiksha.com/college/pulipati-prasad-college-of-pharmaceutical-sciences-khammam-87871",
+  "https://www.shiksha.com/college/aurobindo-college-of-pharmaceutical-sciences-warangal-87877",
+  "https://www.shiksha.com/college/school-of-nursing-the-kozhikode-district-co-operative-hospital-calicut-91023",
+  "https://www.shiksha.com/college/navjivini-institute-of-special-eucation-and-research-patiala-118519",
+  "https://www.shiksha.com/college/bauhre-hari-singh-college-aligarh-122123",
+  "https://www.shiksha.com/college/maharaja-harishchandra-college-of-higher-education-hardoi-143913",
+  "https://www.shiksha.com/college/aditya-tathagat-institute-of-pharmacy-nalanda-146479",
+  "https://www.shiksha.com/college/institute-of-professional-studies-college-of-pharmacy-gwalior-147121",
+  "https://www.shiksha.com/college/shivam-technical-campus-uttar-pradesh-other-148685",
+  "https://www.shiksha.com/college/bns-college-of-pharmacy-uttar-pradesh-other-181137",
+  "https://www.shiksha.com/college/pandit-jamuna-prasad-college-of-pharmacy-gonda-181333",
+  "https://www.shiksha.com/college/sanjeevani-pharmacy-college-amroha-181611",
+  "https://www.shiksha.com/college/apex-heart-institute-ahmedabad-214295",
+  "https://www.shiksha.com/college/runax-institute-kolkata-215181",
+  "https://www.shiksha.com/college/national-cancer-institute-nagpur-230320",
+  "https://www.shiksha.com/college/capital-institute-of-pharmacy-patna-231352",
+  "https://www.shiksha.com/college/vidya-shekhar-group-of-institutions-bangalore-236302",
+  "https://www.shiksha.com/college/emversity-school-of-hospitality-health-sciences-hyderabad-l-b-nagar-239218",
+  "https://www.shiksha.com/college/neelam-healthcare-private-limited-formerly-neelam-hospital-rajpura-240530",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 2161
+    c_count = 3501
 
     try:
         for base_url in BASE_URL:
