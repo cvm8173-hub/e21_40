@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/ganga-pharmacy-college-nizamabad-87729",
-  "https://www.shiksha.com/college/pulipati-prasad-college-of-pharmaceutical-sciences-khammam-87871",
-  "https://www.shiksha.com/college/aurobindo-college-of-pharmaceutical-sciences-warangal-87877",
-  "https://www.shiksha.com/college/school-of-nursing-the-kozhikode-district-co-operative-hospital-calicut-91023",
-  "https://www.shiksha.com/college/navjivini-institute-of-special-eucation-and-research-patiala-118519",
-  "https://www.shiksha.com/college/bauhre-hari-singh-college-aligarh-122123",
-  "https://www.shiksha.com/college/maharaja-harishchandra-college-of-higher-education-hardoi-143913",
-  "https://www.shiksha.com/college/aditya-tathagat-institute-of-pharmacy-nalanda-146479",
-  "https://www.shiksha.com/college/institute-of-professional-studies-college-of-pharmacy-gwalior-147121",
-  "https://www.shiksha.com/college/shivam-technical-campus-uttar-pradesh-other-148685",
-  "https://www.shiksha.com/college/bns-college-of-pharmacy-uttar-pradesh-other-181137",
-  "https://www.shiksha.com/college/pandit-jamuna-prasad-college-of-pharmacy-gonda-181333",
-  "https://www.shiksha.com/college/sanjeevani-pharmacy-college-amroha-181611",
-  "https://www.shiksha.com/college/apex-heart-institute-ahmedabad-214295",
-  "https://www.shiksha.com/college/runax-institute-kolkata-215181",
-  "https://www.shiksha.com/college/national-cancer-institute-nagpur-230320",
-  "https://www.shiksha.com/college/capital-institute-of-pharmacy-patna-231352",
-  "https://www.shiksha.com/college/vidya-shekhar-group-of-institutions-bangalore-236302",
-  "https://www.shiksha.com/college/emversity-school-of-hospitality-health-sciences-hyderabad-l-b-nagar-239218",
-  "https://www.shiksha.com/college/neelam-healthcare-private-limited-formerly-neelam-hospital-rajpura-240530",
+  "https://www.shiksha.com/college/shiva-college-of-pharmacy-bhind-madhya-pradesh-other-230086",
+  "https://www.shiksha.com/college/prestige-college-of-pharmacy-vidisha-230098",
+  "https://www.shiksha.com/college/hanemann-homeopathic-medical-college-bhopal-230166",
+  "https://www.shiksha.com/college/dr-ulhas-patil-college-of-physiotherapy-jalgaon-245520",
+  "https://www.shiksha.com/provider/talentedge-47410",
+  "https://www.shiksha.com/college/pacific-institute-of-fire-and-safety-management-pacific-university-udaipur-59133",
+  "https://www.shiksha.com/university/sri-balaji-vidyapeeth-pondicherry-64775",
+  "https://www.shiksha.com/college/rural-ayurved-mahavidyalay-and-research-centre-satara-86993",
+  "https://www.shiksha.com/college/mahatma-basweshwar-education-society-college-of-pharmacy-latur-88801",
+  "https://www.shiksha.com/college/priydarshni-yashodhara-college-of-pharmacy-chandrapur-88813",
+  "https://www.shiksha.com/college/sahakar-maharshi-kisanrao-varal-patil-college-of-pharmacy-ahmednagar-88839",
+  "https://www.shiksha.com/college/kalpana-ayurvedic-unani-paramedical-college-and-hospital-roorkee-89055",
+  "https://www.shiksha.com/college/shri-swami-vivekanand-shikshan-santha-s-institute-of-pharmacy-sangli-89237",
+  "https://www.shiksha.com/college/j-k-k-munirajah-medical-research-foundation-annai-j-k-k-sampoorani-ammal-college-of-nursing-namakkal-90089",
+  "https://www.shiksha.com/college/shiv-shakti-paramedical-and-nursing-college-aligarh-91087",
+  "https://www.shiksha.com/college/college-of-pharmacy-nandurbar-maharashtra-other-99079",
+  "https://www.shiksha.com/college/kongunadu-polytechnic-college-vedasandur-dindigul-99267",
+  "https://www.shiksha.com/college/sri-mahalakshmi-polytechnic-college-cuddalore-100323",
+  "https://www.shiksha.com/college/miet-meerut-181305",
+  "https://www.shiksha.com/college/ravi-college-of-pharmacy-agra-181369",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 3501
+    c_count = 3841
 
     try:
         for base_url in BASE_URL:
