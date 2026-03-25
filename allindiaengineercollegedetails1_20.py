@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/bhartiya-vidya-mandiar-college-of-pharmacy-gwalior-196795",
-  "https://www.shiksha.com/college/ratnadeep-college-of-pharmacy-ahmednagar-198151",
-  "https://www.shiksha.com/college/shenfadu-fakirba-institute-of-pharmacy-aurangabad-198815",
-  "https://www.shiksha.com/college/ayisha-paramedical-college-najibabad-200017",
-  "https://www.shiksha.com/college/school-for-skills-in-allied-health-sciences-birbhum-200345",
-  "https://www.shiksha.com/college/dr-s-radhakrishnan-district-institute-of-education-and-training-andaman-nicobar-islands-201885",
-  "https://www.shiksha.com/college/maa-maturani-devi-mahavidhyalaya-uttar-pradesh-other-207531",
-  "https://www.shiksha.com/college/channambika-college-of-pharmacy-karnataka-other-207713",
-  "https://www.shiksha.com/college/mahatma-gandhi-institute-of-medical-sciences-uttar-pradesh-other-231434",
-  "https://www.shiksha.com/college/swasthya-kalyan-group-jaipur-231614",
-  "https://www.shiksha.com/college/swami-swaroopanand-college-of-pharmacy-shamli-231642",
-  "https://www.shiksha.com/college/ragiv-gandhi-education-societies-pharmacy-college-gadag-231668",
-  "https://www.shiksha.com/college/maa-kamla-chandrika-jee-vidyapeeth-jehanabad-236332",
-  "https://www.shiksha.com/college/tauheed-pharmacy-college-kishanganj-236354",
-  "https://www.shiksha.com/college/gokul-pharmacy-college-chhattisgarh-other-236386",
-  "https://www.shiksha.com/college/jagannath-college-of-pharmacy-jharkhand-other-236524",
-  "https://www.shiksha.com/college/shri-sr-college-of-pharmacy-neemuch-236612",
-  "https://www.shiksha.com/college/adv-tushar-gawali-college-of-pharmacy-research-technolog-jalna-236636",
-  "https://www.shiksha.com/college/chandrabhaga-college-of-pharmacy-pune-236670",
-  "https://www.shiksha.com/college/saket-institute-of-pharmacy-thane-236752",
+  "https://www.shiksha.com/college/r-v-s-siddha-medical-college-and-hospital-coimbatore-193887",
+  "https://www.shiksha.com/college/sundarlal-patwa-goverment-medical-college-madhya-pradesh-other-231166",
+  "https://www.shiksha.com/college/agrawal-p-g-college-jaipur-12110",
+  "https://www.shiksha.com/college/bharath-college-of-science-and-management-thanjavur-38017",
+  "https://www.shiksha.com/college/dhanvanthri-college-of-pharmaceutical-sciences-telangana-other-70207",
+  "https://www.shiksha.com/college/maharana-pratap-homoeopathy-medical-college-raipur-87211",
+  "https://www.shiksha.com/college/nisarga-college-of-nursing-hassan-90601",
+  "https://www.shiksha.com/college/kle-college-of-pharmacy-vidyanagar-dharwad-146929",
+  "https://www.shiksha.com/college/mrs-saraswati-wani-college-of-d-pharmacy-ahmednagar-147763",
+  "https://www.shiksha.com/college/shri-gulab-singh-college-of-pharmacy-uttar-pradesh-other-181613",
+  "https://www.shiksha.com/college/acharya-institute-of-physiotherapy-soladevanahalli-bangalore-184881",
+  "https://www.shiksha.com/college/g-e-a-national-college-guwahati-186941",
+  "https://www.shiksha.com/college/maulana-azad-college-of-arts-commerce-and-science-aurangabad-190011",
+  "https://www.shiksha.com/college/shine-abdur-razzaque-ansari-institute-of-health-education-and-research-ranchi-38023",
+  "https://www.shiksha.com/college/school-of-nursing-and-medical-technology-ias-academy-jodhpur-park-kolkata-47506",
+  "https://www.shiksha.com/college/national-institute-of-electronics-information-technology-srinagar-50557",
+  "https://www.shiksha.com/college/dr-h-r-bachhan-college-of-pharmacy-unnao-65481",
+  "https://www.shiksha.com/college/takhatmal-shrivallabh-homoeopathic-medical-college-and-hospital-amravati-70159",
+  "https://www.shiksha.com/college/vikas-college-of-pharmaceutical-sciences-nalgonda-88245",
+  "https://www.shiksha.com/college/yd-mane-institute-of-pharmacy-kolhapur-89029",
 ]
 
 
@@ -9248,7 +9248,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 4181
+    c_count = 2481
 
     try:
         for base_url in BASE_URL:
