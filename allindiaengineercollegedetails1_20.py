@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/r-v-s-siddha-medical-college-and-hospital-coimbatore-193887",
-  "https://www.shiksha.com/college/sundarlal-patwa-goverment-medical-college-madhya-pradesh-other-231166",
-  "https://www.shiksha.com/college/agrawal-p-g-college-jaipur-12110",
-  "https://www.shiksha.com/college/bharath-college-of-science-and-management-thanjavur-38017",
-  "https://www.shiksha.com/college/dhanvanthri-college-of-pharmaceutical-sciences-telangana-other-70207",
-  "https://www.shiksha.com/college/maharana-pratap-homoeopathy-medical-college-raipur-87211",
-  "https://www.shiksha.com/college/nisarga-college-of-nursing-hassan-90601",
-  "https://www.shiksha.com/college/kle-college-of-pharmacy-vidyanagar-dharwad-146929",
-  "https://www.shiksha.com/college/mrs-saraswati-wani-college-of-d-pharmacy-ahmednagar-147763",
-  "https://www.shiksha.com/college/shri-gulab-singh-college-of-pharmacy-uttar-pradesh-other-181613",
-  "https://www.shiksha.com/college/acharya-institute-of-physiotherapy-soladevanahalli-bangalore-184881",
-  "https://www.shiksha.com/college/g-e-a-national-college-guwahati-186941",
-  "https://www.shiksha.com/college/maulana-azad-college-of-arts-commerce-and-science-aurangabad-190011",
-  "https://www.shiksha.com/college/shine-abdur-razzaque-ansari-institute-of-health-education-and-research-ranchi-38023",
-  "https://www.shiksha.com/college/school-of-nursing-and-medical-technology-ias-academy-jodhpur-park-kolkata-47506",
-  "https://www.shiksha.com/college/national-institute-of-electronics-information-technology-srinagar-50557",
-  "https://www.shiksha.com/college/dr-h-r-bachhan-college-of-pharmacy-unnao-65481",
-  "https://www.shiksha.com/college/takhatmal-shrivallabh-homoeopathic-medical-college-and-hospital-amravati-70159",
-  "https://www.shiksha.com/college/vikas-college-of-pharmaceutical-sciences-nalgonda-88245",
-  "https://www.shiksha.com/college/yd-mane-institute-of-pharmacy-kolhapur-89029",
+  "https://www.shiksha.com/college/samarpan-college-of-pharmacy-lucknow-181897",
+  "https://www.shiksha.com/college/terna-public-charitable-group-of-institutions-college-of-engineering-osmanabad-190045",
+  "https://www.shiksha.com/college/devendrar-college-of-physiotherapy-tirunelveli-193803",
+  "https://www.shiksha.com/college/ajit-nursing-institute-sangrur-195961",
+  "https://www.shiksha.com/college/merchant-physiotherapy-college-mehsana-197163",
+  "https://www.shiksha.com/college/amar-shahid-kanchan-singh-mahavidyalaya-faculty-of-pharmacy-fatehpur-200089",
+  "https://www.shiksha.com/college/sasmita-institute-of-medical-science-and-technology-puri-200669",
+  "https://www.shiksha.com/college/krishna-hospital-and-institute-of-para-medical-science-jaipur-201221",
+  "https://www.shiksha.com/college/asian-educational-institute-patiala-70771",
+  "https://www.shiksha.com/college/bomma-institute-of-pharmacy-khammam-87755",
+  "https://www.shiksha.com/college/vidya-niketan-institute-of-pharmacy-and-research-center-ahmednagar-89125",
+  "https://www.shiksha.com/college/ahinsa-institute-of-pharmacy-dhule-97435",
+  "https://www.shiksha.com/college/sasikanth-reddy-college-of-pharmacy-nellore-146255",
+  "https://www.shiksha.com/college/shivajirao-kadam-institute-of-pharmaceutical-education-and-research-indore-147193",
+  "https://www.shiksha.com/college/oriental-institute-of-pharmacy-balaghat-147265",
+  "https://www.shiksha.com/college/prem-singh-college-of-pharmacy-unnao-148669",
+  "https://www.shiksha.com/college/jsb-college-of-pahrmacy-mathura-148715",
+  "https://www.shiksha.com/college/radha-krishna-college-of-pharmacy-kanpur-155939",
+  "https://www.shiksha.com/college/indira-bahuuddeshiya-shikshan-sanstha-buldana-college-of-pharmacy-156599",
+  "https://www.shiksha.com/college/sagar-institute-of-research-technology-and-science-pharmacy-bhopal-157103",
 ]
 
 
@@ -9248,7 +9248,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 2481
+    c_count = 3401
 
     try:
         for base_url in BASE_URL:
